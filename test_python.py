@@ -9,7 +9,6 @@ def install_foglamp():
 
 
 def test_foglamp():
-
 	print ("Validating if FogLAMP is up ....")
 
 	#init_val = {'uptime': 17762, 'safeMode': False, 'dataSent': 0, 'hostName': 'localhost.localdomain', 'dataRead': 0, 'serviceName': 'FogLAMP', 'health': 'green', 'ipAddresses': ['192.168.1.140'], 'dataPurged': 0, 'authenticationOptional': True }
@@ -26,8 +25,7 @@ def test_foglamp():
 	for i in range(len(key)):	   
 	   assert data[key[i]] == value[i]
 	
-def main():
-	
+def main():	
 	install_foglamp()
 	test_foglamp()
 	print ("FogLAMP installation and validation complete")
