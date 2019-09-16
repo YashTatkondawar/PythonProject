@@ -4,7 +4,6 @@ import json
 import pytest
 
 def install_foglamp():
-
 	subprocess.call(['./install.sh'])
 
 
