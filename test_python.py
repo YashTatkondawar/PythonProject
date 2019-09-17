@@ -3,7 +3,8 @@ import httplib
 import json
 import pytest
 
-def install_foglamp():
+def setup_module(module):
+	print ("*******Setting up***************\n")
 	subprocess.call(['./install.sh'])
 
 
@@ -23,12 +24,7 @@ def test_foglamp():
 	
 	for i in range(len(key)):	   
 	   assert data[key[i]] == value[i]
-	
-def main():	
-	install_foglamp()
-	test_foglamp()
-	print ("FogLAMP installation and validation complete")
 
-	
-if __name__ == "__main__":
-	main()
+def teardown_module(module):
+	print ("\n********Tearing down********")
+	subprocess.call(['./uninstall.sh'])	
