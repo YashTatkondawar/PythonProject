@@ -4,10 +4,10 @@ import json
 import pytest
 from collections import Counter
 
-class TestClass:
+class test_class:
     def setup_method(self,method):
         print ("*******Setting up***************\n")
-	subprocess.call(['./install.sh'])
+        subprocess.call(['./install.sh'])
 
 
     def test_foglamp(self):
