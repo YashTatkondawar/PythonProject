@@ -4,7 +4,7 @@ import json
 import pytest
 from collections import Counter
 
-class SampleClass:
+class TestClass:
     def setup_method(self,method):
         print ("*******Setting up***************\n")
         subprocess.call(['./install.sh'])
