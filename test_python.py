@@ -12,12 +12,7 @@ class TestClass:
     def test_foglamp(self):
         print ("Validating if FogLAMP is up ....")
 
-        init_val = {'uptime': 17762, 'safeMode': False, 'dataSent': 0, 'hostName': 'localhost.localdomain', 'dataRead': 0, 'serviceName': 'FogLAMP', 'health': 'green', 'ipAddresses': ['192.168.1.140'], 'dataPurged': 0, 'authenticationOptional': True }
-
-        key = ["uptime","safeMode","dataSent","hostName","dataRead","serviceName","health","ipAddresses","dataPurged","authenticationOptional"]
-        value = [1,False,0,'localhost.localdomain',0,'FogLAMP','green',['192.168.1.140'],0,True]
-
-        init_val = {'uptime': 17762, 'safeMode': False, 'dataSent': 0, 'hostName': 'localhost.localdomain', 'dataRead': 0, 'serviceName': 'FogLAMP', 'health': 'green', 'ipAddresses': ['192.168.1.140'], 'dataPurged': 0, 'authenticationOptional': True }
+        #init_val = {'uptime': 17762, 'safeMode': False, 'dataSent': 0, 'hostName': 'localhost.localdomain', 'dataRead': 0, 'serviceName': 'FogLAMP', 'health': 'green', 'ipAddresses': ['192.168.1.140'], 'dataPurged': 0, 'authenticationOptional': True }
 
         key = ["uptime","safeMode","dataSent","hostName","dataRead","serviceName","health","ipAddresses","dataPurged","authenticationOptional"]
         value = [1,False,0,'localhost.localdomain',0,'FogLAMP','green',['192.168.1.140'],0,True]
