@@ -9,15 +9,6 @@ class TestClass:
         print ("*******Setting up***************\n")
         subprocess.call(['./install.sh'])
 
-
-    def test_foglamp(self):
-        print ("Validating if FogLAMP is up ....")
-
-        init_val = {'uptime': 17762, 'safeMode': False, 'dataSent': 0, 'hostName': 'localhost.localdomain', 'dataRead': 0, 'serviceName': 'FogLAMP', 'health': 'green', 'ipAddresses': ['192.168.1.140'], 'dataPurged': 0, 'authenticationOptional': True }
-
-    def test_foglamp(self):
-        print ("Validating if FogLAMP is up ....")
-
     def test_foglamp(self):
         print ("Validating if FogLAMP is up ....")
 
