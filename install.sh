@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#set -e
+set -e
 
 echo "*****Starting the installation of Foglamp and Foglamp-GUI*****";
 
